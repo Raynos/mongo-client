@@ -27,7 +27,7 @@ var insertResult = insert(collection, {
 var findResult = expand(insertResult, function (item) {
     assert.equal(item.hello, "world")
     return findOne(collection, {
-        hello: "world"
+        _id: item._id
     })
 })
 

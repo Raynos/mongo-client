@@ -1,7 +1,7 @@
 var uuid = require("node-uuid")
 var assert = require("assert")
 var fold = require("reducers/fold")
-var expand = require("reducers/expand")
+var expand = require("reducers/concat")
 
 var mongo = require("..")
 var insert = require("../insert")
@@ -18,7 +18,7 @@ var insertResult = insert(collection, {
 var findResult = expand(insertResult, function (item) {
     assert.equal(item.hello, "world")
     return findOne(collection, {
-        hello: "world"
+        _id: item._id
     })
 })
 
