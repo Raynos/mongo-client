@@ -4,6 +4,10 @@
 
 No bullshit mongo wrapper
 
+Similar to [mongodb][3] or [mongo-col][4] except everything is
+    a function that operates on a collection and returns a
+    [reducible][5] representation of the result.
+
 ## Example
 
 ```js
@@ -64,3 +68,6 @@ Supports
 
   [1]: https://secure.travis-ci.org/Raynos/mongo-client.png
   [2]: http://travis-ci.org/Raynos/mongo-client
+  [3]: http://mongodb.github.com/node-mongodb-native/
+  [4]: https://github.com/Raynos/mongo-col
+  [5]: https://github.com/gozala/reducers
