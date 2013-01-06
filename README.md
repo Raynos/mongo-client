@@ -45,8 +45,8 @@ Supports
  - update DONE
  - insert DONE
  - remove DONE
- - findAndModify
- - findAndRemove
+ - findAndModify TODO
+ - findAndRemove TODO
  - findOne DONE
  - find DONE
  - mapReduce DONE
