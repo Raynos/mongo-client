@@ -1,0 +1,72 @@
+{
+  "name": "mongo-client",
+  "version": "0.1.0",
+  "description": "No bullshit mongo wrapper",
+  "keywords": [],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Raynos/mongo-client.git",
+  "main": "index",
+  "homepage": "https://github.com/Raynos/mongo-client",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Raynos/mongo-client/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "dependencies": {
+    "testem": "~0.2.52",
+    "reducers": "~2.0.0",
+    "mongodb": "~1.2.7",
+    "callback-reduce": "~1.0.0",
+    "reducible": "~1.0.5",
+    "cache-reduce": "~0.1.1"
+  },
+  "devDependencies": {
+    "tape": "0.1.5",
+    "browserify": "https://github.com/raynos/node-browserify/tarball/master",
+    "testem": "0.2.52",
+    "node-uuid": "~1.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/mongo-client/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "node ./test",
+    "build": "browserify test/index.js -o test/bundle.js",
+    "testem": "testem",
+    "postinstall": "npm dedup"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": {
+      "ie": [
+        "8",
+        "9",
+        "10"
+      ],
+      "firefox": [
+        "16",
+        "17",
+        "nightly"
+      ],
+      "chrome": [
+        "22",
+        "23",
+        "canary"
+      ],
+      "opera": [
+        "12",
+        "next"
+      ],
+      "safari": [
+        "5.1"
+      ]
+    }
+  }
+}
