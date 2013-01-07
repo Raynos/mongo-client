@@ -22,7 +22,8 @@ var findOne = require("mongo-client/findOne")
 var close = require("mongo-client/close")
 
 var client = mongo("mongodb://localhost:27017/mongo-client-example")
-var collection = client(uuid())
+var collectionName = uuid()
+var collection = client(collectionName)
 
 var insertResult = insert(collection, {
     hello: "world"
@@ -46,14 +47,14 @@ fold(findResult, function (value) {
 
 Supports
 
- - update DONE
- - insert DONE
- - remove DONE
- - findAndModify TODO
- - findAndRemove TODO
- - findOne DONE
- - find DONE
- - mapReduce DONE
+ - update
+ - insert
+ - remove
+ - findAndModify
+ - findAndRemove
+ - findOne
+ - find
+ - mapReduce
 
 ## Installation
 
