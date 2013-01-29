@@ -39,8 +39,7 @@
   "scripts": {
     "test": "node ./test",
     "build": "browserify test/index.js -o test/bundle.js",
-    "testem": "testem",
-    "postinstall": "npm dedup"
+    "testem": "testem"
   },
   "testling": {
     "files": "test/*.js",
