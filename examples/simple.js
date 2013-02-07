@@ -1,7 +1,7 @@
 var uuid = require("node-uuid")
 var assert = require("assert")
 var fold = require("reducers/fold")
-var expand = require("reducers/concat")
+var expand = require("reducers/expand")
 
 var mongo = require("..")
 var insert = require("../insert")
