@@ -1,6 +1,7 @@
 import { uuid } from "node-uuid"
-import { assert } from "node"
+import { equal } from "assert"
 import { fold, expand } from "reducers"
+import { log } from "@console"
 
 import { mongo, insert, findOne, close } from ".."
 
@@ -12,14 +13,14 @@ var insertResult = insert(collection, {
 })
 
 var findResult = expand(insertResult, function (item) {
-    assert.equal(item.hello, "world")
+    equal(item.hello, "world")
     return findOne(collection, {
         _id: item._id
     })
 })
 
 fold(findResult, function (value) {
-    assert.equal(value.hello, "world")
-    console.log("value", value)
+    equal(value.hello, "world")
+    log("value", value)
     close(collection)
 })

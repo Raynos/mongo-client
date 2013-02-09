@@ -9,5 +9,5 @@ export {
     , mapReduce: "./mapReduce"
     , mongo: "./mongo"
     , remove: "./remove"
-    , update:"./update"
+    , update: "./update"
 }
