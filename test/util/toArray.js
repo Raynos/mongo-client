@@ -1,6 +1,4 @@
-var reduce = require("reducible/reduce")
-var end = require("reducible/end")
-var isError = require("reducible/is-error")
+import { reduce, end, isError } from "reducible"
 
 module.exports = toArray
 

@@ -1,6 +1,5 @@
-var test = require("tape")
-var mongo = require("..")
-var close = require("../close")
+import { test } from "tape"
+import { mongo, close } from ".."
 
 test("mongo is a function", function (assert) {
     assert.equal(typeof mongo, "function")

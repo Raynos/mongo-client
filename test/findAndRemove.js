@@ -1,3 +1,9 @@
+import { test } from "tape"
+import { fold } from "reducers"
+import { uuid } from "node-uuid"
+
+import { findAndRemove, findOne, insert, close } from ".."
+import { Collection } from "util"
 var test = require("tape")
 var fold = require("reducers/fold")
 var uuid = require("node-uuid")

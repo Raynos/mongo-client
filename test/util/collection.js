@@ -1,6 +1,6 @@
-var mongo = require("../..")
+import { mongo } from "../.."
 
-module.exports = collection
+export = collection
 
 function collection() {
     var client = mongo("mongodb://localhost:27017/mongo-client-test")

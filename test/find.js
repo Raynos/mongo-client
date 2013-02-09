@@ -1,12 +1,9 @@
-var test = require("tape")
-var fold = require("reducers/fold")
-var take = require("reducers/take")
-var uuid = require("node-uuid")
+import { test } from "tape"
+import { fold, take } from "reducers"
+import { uuid } from "node-uuid"
 
-var find = require("../find")
-var insert = require("../insert")
-var close = require("../close")
-var Collection = require("./util/collection")
+import { find, insert, close } from ".."
+import { Collection } from "./util"
 
 var collection = Collection()
 var value = uuid()
