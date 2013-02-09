@@ -1,11 +1,10 @@
-// Shit how I ?
-require("../examples/simple")
+import "../examples/simple"
 
-require("./client")
-require("./find")
-require("./update")
-require("./findOne")
-require("./remove")
-require("./mapReduce")
-require("./findAndModify")
-require("./findAndRemove")
+import "./client"
+import "./find"
+import "./update"
+import "./findOne"
+import "./remove"
+import "./mapReduce"
+import "./findAndModify"
+import "./findAndRemove"
