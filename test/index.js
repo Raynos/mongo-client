@@ -1,10 +1,10 @@
-import "../examples/simple"
+import "../examples/simple" as simple
 
-import "./client"
-import "./find"
-import "./update"
-import "./findOne"
-import "./remove"
-import "./mapReduce"
-import "./findAndModify"
-import "./findAndRemove"
+import "./client" as client
+import "./find" as find
+import "./update" as update
+import "./findOne" as findOne
+import "./remove" as remove
+import "./mapReduce" as mapReduce
+import "./findAndModify" as findAndModify
+import "./findAndRemove" as findAndRemove
