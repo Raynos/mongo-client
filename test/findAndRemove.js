@@ -4,15 +4,6 @@ import { uuid } from "node-uuid"
 
 import { findAndRemove, findOne, insert, close } from ".."
 import { Collection } from "util"
-var test = require("tape")
-var fold = require("reducers/fold")
-var uuid = require("node-uuid")
-
-var findAndRemove = require("../findAndRemove")
-var findOne = require("../findOne")
-var insert = require("../insert")
-var close = require("../close")
-var Collection = require("./util/collection")
 
 var collection = Collection()
 var value = uuid()

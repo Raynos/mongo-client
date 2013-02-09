@@ -1,4 +1,4 @@
-import { mongodb, MongoClient } from "mongodb"
+import { MongoClient } from "mongodb"
 import { map, fold } from "reducers"
 import { callback } from "callback-reduce"
 import { cache } from "cache-reduce"
