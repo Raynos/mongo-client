@@ -1,6 +1,5 @@
-var take = require("reducers/take")
-var concat = require("reducers/concat")
-var find = require("./find")
+import { take, concat } from "reducers"
+import { find } from "."
 
 module.exports = findOne
 

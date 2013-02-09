@@ -1,7 +1,5 @@
-var reduce = require("reducible/reduce")
-var end = require("reducible/end")
-var isReduced = require("reducible/is-reduced")
-var Cursor = require("mongodb").Cursor
+import { reduce, end, isReduced } from "reducible"
+import { Cursor } from "mongodb"
 
 reduce.define(Cursor, function (cursor, next, initial) {
     var result = initial

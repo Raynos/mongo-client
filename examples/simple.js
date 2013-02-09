@@ -1,12 +1,8 @@
-var uuid = require("node-uuid")
-var assert = require("assert")
-var fold = require("reducers/fold")
-var expand = require("reducers/expand")
+import { uuid } from "node-uuid"
+import { assert } from "node"
+import { fold, expand } from "reducers"
 
-var mongo = require("..")
-var insert = require("../insert")
-var findOne = require("../findOne")
-var close = require("../close")
+import { mongo, insert, findOne, close } from ".."
 
 var client = mongo("mongodb://localhost:27017/mongo-client-example")
 var collection = client(uuid())

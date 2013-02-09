@@ -1,8 +1,7 @@
-var expand = require("reducers/expand")
-var take = require("reducers/take")
-var callback = require("callback-reduce")
+import { expand, take } from "reducers"
+import { callback } from "callback-reduce"
 
-module.exports = findAndRemove
+export = findAndRemove
 
 function findAndRemove(collection, query, sort, options) {
     return take(expand(collection, function (collection) {

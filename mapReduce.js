@@ -1,7 +1,7 @@
-var callback = require("callback-reduce")
-var expand = require("reducers/expand")
+import { expand } from "reducers"
+import { callback } from "callback-reduce"
 
-module.exports = mapReduce
+export = mapReduce
 
 function mapReduce(collection, map, reduce, options) {
     return expand(collection, function (collection) {

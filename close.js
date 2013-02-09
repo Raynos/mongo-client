@@ -1,6 +1,6 @@
-var fold = require("reducers/fold")
+import { fold } from "reducible"
 
-module.exports = close
+export = close
 
 function close(collection, callback) {
     return fold(collection, function (collection) {

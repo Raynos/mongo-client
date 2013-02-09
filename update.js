@@ -1,8 +1,7 @@
-var expand = require("reducers/expand")
-var take = require("reducers/take")
-var callback = require("callback-reduce")
+import { take, expand } from "reducers"
+import { callback } from "callback-reduce"
 
-module.exports = update
+export = update
 
 function update(collection, selector, doc, options) {
     return take(expand(collection, function (collection) {

@@ -1,9 +1,8 @@
-var expand = require("reducers/expand")
-var callback = require("callback-reduce")
+import { expand } from "reducers"
+import { callback } from "callback-reduce"
+import { cursor } from "."
 
-var cursor = require("./cursor")
-
-module.exports = find
+export = find
 
 function find(collection, selector, options) {
     return expand(collection, function (collection) {

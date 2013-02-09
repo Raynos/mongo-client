@@ -1,7 +1,7 @@
-var expand = require("reducers/expand")
-var callback = require("callback-reduce")
+import { expand } from "reducers"
+import { callback } from "callback-reduce"
 
-module.exports = remove
+export = remove
 
 function remove(collection, selector, options) {
     return expand(collection, function (collection) {
