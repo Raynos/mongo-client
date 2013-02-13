@@ -7,6 +7,7 @@ module.exports = find
 
 function find(collection, selector, options) {
     return expand(collection, function (collection) {
-        return collection.find(selector || {}, options || {})
+        return callback.call(collection, collection.find
+            , selector || {}, options || {})
     })
 }
