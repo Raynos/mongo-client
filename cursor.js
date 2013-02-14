@@ -11,6 +11,10 @@ reduce.define(Cursor, function (cursor, next, initial) {
     function recurse() {
         cursor.nextObject(function (error, value) {
             if (error) {
+                if (typeof error === "string") {
+                    error = new Error(error)
+                }
+
                 return next(error, result)
             }
 
