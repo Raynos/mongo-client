@@ -21,17 +21,19 @@
     "reducers": "Raynos/reducers",
     "mongodb": "~1.2.7",
     "callback-reduce": "Raynos/callback-reduce",
-    "cache-reduce": "Raynos/cache-reduce"
+    "cache-reduce": "Raynos/cache-reduce",
+    "introspect": "0.0.2"
   },
   "peerDependencies": {
-    "reducible": "~1.0.5"
+    "reducible": "Raynos/reducible#1.x"
   },
   "devDependencies": {
-    "tape": "0.1.5",
-    "reducible": "~1.0.5",
+    "tape": "git://github.com/Raynos/tape",
+    "reducible": "Raynos/reducible#1.x",
     "browserify": "https://github.com/raynos/node-browserify/tarball/master",
     "testem": "0.2.52",
-    "node-uuid": "~1.4.0"
+    "node-uuid": "~1.4.0",
+    "introspect": "0.0.2"
   },
   "licenses": [
     {
