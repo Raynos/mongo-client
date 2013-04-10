@@ -1,6 +1,6 @@
 {
   "name": "mongo-client",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "No bullshit mongo wrapper",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
